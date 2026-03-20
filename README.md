@@ -1,24 +1,29 @@
-# README
+# Sistema de Agendamento
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicação web desenvolvida em Ruby on Rails para gerenciamento de agendamentos.
 
-Things you may want to cover:
+## Funcionalidades
 
-* Ruby version
+- Cadastro de horários disponíveis
+- Agendamento por clientes com nome e telefone
+- Horário marcado como ocupado automaticamente após agendamento
+- Painel admin com listagem de todos os agendamentos
+- Validações para evitar horários duplicados
 
-* System dependencies
+## Tecnologias
 
-* Configuration
+- Ruby on Rails 8
+- SQLite
+- Bootstrap 5
 
-* Database creation
+## Como rodar localmente
 
-* Database initialization
+​```bash
+git clone https://github.com/vsmota15-coder/Agendamento.git
+cd Agendamento
+bundle install
+rails db:migrate
+rails server
+​```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Acesse http://localhost:3000/slots
